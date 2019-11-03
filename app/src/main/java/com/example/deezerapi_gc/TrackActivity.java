@@ -1,7 +1,5 @@
 package com.example.deezerapi_gc;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -9,8 +7,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.deezerapi_gc.Model.TrackDetail;
-import com.example.deezerapi_gc.R;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.squareup.picasso.Picasso;
 
 public class TrackActivity extends AppCompatActivity {
@@ -57,7 +55,7 @@ public class TrackActivity extends AppCompatActivity {
             }
             else{
                 Intent intent=new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(spreview));
+                intent.setData(Uri.parse(slink));
                 startActivity(intent);
             }
         });
